@@ -1,0 +1,14 @@
+{
+  "name": "storepay",
+  "version": "1.0.0",
+  "description": "Storepay Coin (SPC) ERC-20 token smart contract",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "khaschuluu@ictgroup.mn",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.2",
+    "truffle-flattener": "github:jplew/truffle-flattener"
+  }
+}
