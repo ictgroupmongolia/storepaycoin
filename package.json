@@ -1,7 +1,7 @@
 {
   "name": "storepay",
   "version": "1.0.0",
-  "description": "Storepay Coin (SPC) ERC-20 token smart contract",
+  "description": "Storepay Coin (SPC) smart contract",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
