@@ -1,11 +1,11 @@
-// SPDX-License-Identifier: UNLICENSED
+// contracts/StorepayCoin.sol
+// SPDX-License-Identifier: MIT
 pragma solidity 0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
 import "@openzeppelin/contracts/token/ERC20/utils/TokenTimelock.sol";
 
 contract StorepayCoin is ERC20Burnable {
-    TokenTimelock public liquidityTimelock;
     TokenTimelock public teamTimelock;
     constructor() ERC20("Storepay Coin", "SPC") {
         // IEO
@@ -18,8 +18,7 @@ contract StorepayCoin is ERC20Burnable {
         _mint(0xc0E9302b2A73ceC32a8f2369Fae4B08b65508dDb, 180000000000*10**18);
 
         // Liquidity
-        liquidityTimelock = new TokenTimelock(this, 0x2D27f516D38253bf87175dED4Ce67d45A6a730B9, block.timestamp + 10*365*24*60*60);
-        _mint(address(liquidityTimelock), 60000000000*10**18);
+        _mint(0x2D27f516D38253bf87175dED4Ce67d45A6a730B9, 60000000000*10**18);
 
         // International strategic partnership
         _mint(0x2B72228537Ea60Fd3a3500058De68c78ec062C24, 66000000000*10**18);
