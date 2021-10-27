@@ -9,28 +9,28 @@ contract StorepayCoin is ERC20Burnable {
     TokenTimelock public teamTimelock;
     constructor() ERC20("Storepay Coin", "SPC") {
         // IEO
-        _mint(0x4B3DF033A6B23deF3463483325d470C14345827D, 90000000000*10**18);
+        _mint(0x35B5b3Fb6708f898Cc4307aBF138fbc8a832795D, 90000000000*10**18);
 
         // Secondary market
-        _mint(0x607CEbEA625eB3303DC071be1daDb21E7eb6E3f1, 60000000000*10**18);
+        _mint(0xfbcD661cC65F609d068a0710E2Fab0f4978c3bb3, 60000000000*10**18);
 
         // Storepay Holding Singapore
-        _mint(0xc0E9302b2A73ceC32a8f2369Fae4B08b65508dDb, 180000000000*10**18);
+        _mint(0xF00e55B4a680989A185b8691dEaC3a14269Ddc24, 180000000000*10**18);
 
         // Liquidity
-        _mint(0x2D27f516D38253bf87175dED4Ce67d45A6a730B9, 60000000000*10**18);
+        _mint(0xdcDC10d974541c0C5F87B53f10Be192063418Fa2, 60000000000*10**18);
 
         // International strategic partnership
-        _mint(0x2B72228537Ea60Fd3a3500058De68c78ec062C24, 66000000000*10**18);
+        _mint(0x2c19cf7694Bdc1077e2D1A2a61ec6666199037E9, 66000000000*10**18);
 
         // Reward and activation fund
-        _mint(0x8C4495d26c103841847E8ADb3bc88a5823E79be1, 54000000000*10**18);
+        _mint(0x0D569A2fb6B9A8676f6be5C1BA65Ae2E51B2758b, 54000000000*10**18);
 
         // Founders, team and advisors
-        teamTimelock = new TokenTimelock(this, 0xBcC14b940e1AdC1aD84FdCB3C972F89039d7D5C2, block.timestamp + 1*365*24*60*60);
+        teamTimelock = new TokenTimelock(this, 0x7C0cB62d6405480A6dC31C64B3E3dE78a6F972b9, block.timestamp + 1*365*24*60*60);
         _mint(address(teamTimelock), 30000000000*10**18);
 
         // Strategic resource
-        _mint(0xeb433753eB6D5665139b57213F54b37166a21762, 60000000000*10**18);
+        _mint(0xf8B0a663603A214A973d86C852c3ff041465ac56, 60000000000*10**18);
     }
 }
